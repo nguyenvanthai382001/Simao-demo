@@ -45,9 +45,6 @@ body{
         color: #000;
         text-transform: uppercase;
         text-align: center;
-        @include maxWidth (576px){
-            padding: 0 30px;
-        }
     }
     & p::after{
         content: "";
@@ -59,10 +56,7 @@ body{
         left: 49.3%;
         transform: translate(-50%,-50%);
         @include maxWidth (1024px){
-            left: 48.7%;
-        }
-        @include maxWidth (1024px){
-            left: 48%;
+            left: 48.5%;
         }
     }
     & p::before{
@@ -81,32 +75,3 @@ body{
     font-size: 16px;
     color: #686868;
 }
-// .header{
-//     display: none;
-// }
-.content {
-    // .about{
-    //     display: none;
-    // }
-    // .my-service{
-    //     display: none;
-    // }
-    // .education-bg{
-    //     display: none;
-    // }
-    .my-product{
-        display: none;
-    }
-    // .project{
-    //     display: none;
-    // }
-    // .blog{
-    //     display: none;
-    // }
-    .contact{
-        display: none;
-    }
-}
-    .footer{
-        display: none;
-    }
