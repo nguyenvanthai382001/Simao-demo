@@ -31,8 +31,8 @@ $(document).ready(function(){
             }
           }],
         
-        prevArrow:"<button type='button' class='slick-prev pull-left'><img src='../img/icon-prev.png' alt='img'></button>",
-        nextArrow:"<button type='button' class='slick-next pull-right'><img src='../img/icon-next.png' alt='img'></button>"
+        prevArrow:"<button type='button' class='slick-prev pull-left'><img src='./img/icon-prev.png' alt='img'></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><img src='./img/icon-next.png' alt='img'></button>"
       });
       $('.edu-list').slick({
         infinite: true,
