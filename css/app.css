@@ -229,12 +229,12 @@ body {
 .header .nav .logo img {
   height: 23px;
 }
-.header .nav .menu {
+.header .nav .nav-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.header .nav .menu .item-menu a {
+.header .nav .nav-menu .nav-item a {
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
@@ -242,11 +242,8 @@ body {
   font-size: 14px;
   padding-top: 4px;
 }
-.header .nav .menu .item-menu a:hover {
+.header .nav .nav-menu .nav-item a:hover {
   color: #FFB600;
-}
-.header .nav .menu-mobile {
-  display: none;
 }
 .header .hero {
   display: flex;
@@ -286,7 +283,7 @@ body {
   .header .nav {
     padding: 20px 0px;
   }
-  .header .nav .menu {
+  .header .nav .nav-menu {
     justify-content: space-around;
   }
   .header .hero .hero-content .hero-name {
@@ -301,19 +298,49 @@ body {
     padding: 20px 0px;
     position: relative;
   }
-  .header .nav .menu {
-    display: none;
+  .header .nav .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #FFB600;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 10;
   }
-  .header .nav .menu-mobile {
+  .header .nav .nav-menu.active {
+    left: 0;
+  }
+  .header .nav .nav-item {
+    margin: 1.5rem 0;
+  }
+  .header .nav .hamburger {
     display: block;
+    cursor: pointer;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 17px;
+    top: -30px;
   }
-  .header .nav .menu-mobile a {
-    font-size: 30px;
-    color: #fff;
-    margin: 10px 20px;
+  .header .nav .hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+  }
+  .header .nav .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .header .nav .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .header .nav .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
   .header .hero {
     flex-direction: column;

@@ -10,11 +10,11 @@
         & .logo img {
             height: 23px;
         }
-        & .menu {
+        & .nav-menu {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            .item-menu{
+            .nav-item{
                 a {
                     text-transform: uppercase;
                     text-decoration: none;
@@ -27,10 +27,6 @@
                     color: $orange-color;
                 }
             }
-
-        }
-        & .menu-mobile {
-            display: none;
         }
     }
     & .hero {
@@ -70,10 +66,9 @@
         }
     }
     @include maxWidth (1024px){
-
         & .nav {
             padding: 20px 0px;
-            .menu {
+            .nav-menu {
                 justify-content: space-around;
             }
         }
@@ -92,20 +87,56 @@
         & .nav {
             padding: 20px 0px;
             position: relative;
-            & .menu {
-                display: none;
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 5rem;
+                flex-direction: column;
+                background-color:$orange-color;
+                width: 100%;
+                border-radius: 10px;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+                z-index: 10;
             }
-            & .menu-mobile{
+        
+            .nav-menu.active {
+                left: 0;
+            }
+        
+            .nav-item {
+                margin: 1.5rem 0;
+            }
+        
+            .hamburger {
                 display: block;
+                cursor: pointer;
                 position: absolute;
-                right: 0;
-                top: 0;
-                a {
-                    font-size: 30px;
-                    color: #fff;
-                    margin: 10px 20px;
+                right: 17px;
+                top: -30px;
+                .bar {
+                    display: block;
+                    width: 25px;
+                    height: 3px;
+                    margin: 5px auto;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
+                    background-color: #fff;
                 }
             }
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+        
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+        
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        
         }
         & .hero {
             flex-direction: column;
