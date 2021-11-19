@@ -541,7 +541,7 @@
                     width: 4px;
                     background-color: $orange-color;
                     position: absolute;
-                    bottom: -20%;
+                    bottom: -18%;
                     left: 50%;
                 }
                 & .box:nth-child(2)::after{
@@ -550,7 +550,7 @@
                     width: 4px;
                     background-color: $orange-color;
                     position: absolute;
-                    bottom: -20%;
+                    bottom: -18%;
                     left: 50%;
                 }
                 & .box:nth-child(3)::after{
@@ -559,7 +559,7 @@
                     width: 4px;
                     background-color: $orange-color;
                     position: absolute;
-                    bottom: -20%;
+                    bottom: -18%;
                     left: 50%;
                 }
                 & .box:nth-child(2)::before{
@@ -638,6 +638,9 @@
         }
         @include maxWidth(576px){
             padding-bottom: 40px;
+            .calendar {
+                margin-left:11px;
+            }
         }
     }
 
@@ -727,6 +730,7 @@
             padding: 20px 20px 10px 20px;
             margin-bottom: 70px;
             .contact-content {
+                padding: 36px 20px 27px 20px;
                 span {
                     font-size: 18px;
                 }

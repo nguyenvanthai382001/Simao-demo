@@ -910,7 +910,7 @@ body {
     width: 4px;
     background-color: #FFB600;
     position: absolute;
-    bottom: -20%;
+    bottom: -18%;
     left: 50%;
   }
   .content .education-bg .edu-main .box:nth-child(2)::after {
@@ -919,7 +919,7 @@ body {
     width: 4px;
     background-color: #FFB600;
     position: absolute;
-    bottom: -20%;
+    bottom: -18%;
     left: 50%;
   }
   .content .education-bg .edu-main .box:nth-child(3)::after {
@@ -928,7 +928,7 @@ body {
     width: 4px;
     background-color: #FFB600;
     position: absolute;
-    bottom: -20%;
+    bottom: -18%;
     left: 50%;
   }
   .content .education-bg .edu-main .box:nth-child(2)::before {
@@ -995,6 +995,9 @@ body {
 @media screen and (max-width: 576px) {
   .content .blog {
     padding-bottom: 40px;
+  }
+  .content .blog .calendar {
+    margin-left: 11px;
   }
 }
 .content .contact {
@@ -1076,6 +1079,9 @@ body {
   .content .contact {
     padding: 20px 20px 10px 20px;
     margin-bottom: 70px;
+  }
+  .content .contact .contact-content {
+    padding: 36px 20px 27px 20px;
   }
   .content .contact .contact-content span {
     font-size: 18px;
