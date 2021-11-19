@@ -40,7 +40,7 @@ body{
     padding: 150px 0px 100px 0px;
     & p{
         font-weight: 700;
-        font-size: 30px;
+        font-size: 27px;
         line-height: 35px;
         color: #000;
         text-transform: uppercase;
@@ -68,6 +68,16 @@ body{
         top: 36.6%;
         left: 50%;
         transform: translate(-50%,-50%);
+    }
+    @include maxWidth(576px){
+        padding: 80px 0px 40px 0px;
+        p::before{
+            top: 29.3%;
+        }
+        p::after{
+            top: 33%;
+            left: 47%;
+        }
     }
 }
 

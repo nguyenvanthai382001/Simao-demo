@@ -180,7 +180,7 @@ body {
 }
 .title-category p {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 27px;
   line-height: 35px;
   color: #000;
   text-transform: uppercase;
@@ -210,6 +210,18 @@ body {
   top: 36.6%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 576px) {
+  .title-category {
+    padding: 80px 0px 40px 0px;
+  }
+  .title-category p::before {
+    top: 29.3%;
+  }
+  .title-category p::after {
+    top: 33%;
+    left: 47%;
+  }
 }
 
 .text {
@@ -427,6 +439,17 @@ body {
 .content .about .about-main .about-lever .progress .progress-bar {
   background-color: #FFB600;
 }
+@media screen and (max-width: 576px) {
+  .content .about {
+    padding-bottom: 37px;
+  }
+  .content .about .about-main .about-name {
+    margin-top: 20px;
+  }
+  .content .about .about-main .about-avt img {
+    margin-top: 27px;
+  }
+}
 .content .my-service {
   padding-bottom: 100px;
   background-color: #FFF9EF;
@@ -503,6 +526,9 @@ body {
   }
 }
 @media screen and (max-width: 576px) {
+  .content .my-service {
+    padding-bottom: 40px;
+  }
   .content .my-service .service-list .slick-next {
     right: 2.5%;
   }
@@ -534,9 +560,12 @@ body {
   color: #FFB600;
 }
 @media screen and (max-width: 576px) {
+  .content .my-product {
+    padding-bottom: 40px;
+  }
   .content .my-product .product-list {
     flex-wrap: wrap;
-    margin-top: -70px;
+    margin-top: -40px;
   }
   .content .my-product .product-list li {
     padding-top: 20px;
@@ -581,7 +610,11 @@ body {
   margin-top: 56px;
 }
 @media screen and (max-width: 576px) {
+  .content .project {
+    padding-bottom: 40px;
+  }
   .content .project .project-main .project-heading {
+    margin-top: 30px;
     font-size: 28px;
   }
   .content .project .project-main .project-desc {
@@ -802,6 +835,13 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  .content .education-bg {
+    padding-bottom: 90px;
+  }
+  .content .education-bg .edu-main {
+    padding-bottom: 0px;
+    margin-bottom: 40px;
+  }
   .content .education-bg .edu-main .box:nth-child(1)::after {
     content: "";
     height: 186px;
@@ -919,6 +959,7 @@ body {
   font-size: 14px;
   line-height: 16, 41px;
   color: #535353;
+  text-align: left;
 }
 .content .blog .row .col-lg-4 .blog-item .body .calendar i {
   margin-right: 6px;
@@ -949,6 +990,11 @@ body {
 @media screen and (max-width: 1024px) {
   .content .blog .row .col-lg-4:last-child {
     display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  .content .blog {
+    padding-bottom: 40px;
   }
 }
 .content .contact {
@@ -1028,7 +1074,8 @@ body {
 }
 @media screen and (max-width: 576px) {
   .content .contact {
-    padding: 70px 20px 10px 20px;
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 70px;
   }
   .content .contact .contact-content span {
     font-size: 18px;
